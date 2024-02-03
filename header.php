@@ -166,7 +166,7 @@ session_start();
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-								<font style="font-style:bold; font-size: 30px;color: white;font-family: sans-serif"><a style="color:white">Пивной</a>
+								<font style="font-style:bold; font-size: 30px;color: white;font-family: sans-serif"><a style="color:white">ПИВШОП</a>
                                     </font>
 									
 								</a>
