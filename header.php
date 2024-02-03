@@ -11,7 +11,7 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>SUST Shopping</title>
+		<title>Пивной</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:500,500,700" rel="stylesheet">
@@ -166,7 +166,7 @@ session_start();
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-								<font style="font-style:bold; font-size: 30px;color: white;font-family: sans-serif"><a style="color:white">SUST Online Store</a>
+								<font style="font-style:bold; font-size: 30px;color: white;font-family: sans-serif"><a style="color:white">ПИВШОП</a>
                                     </font>
 									
 								</a>
@@ -183,7 +183,7 @@ session_start();
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
-										<span>Your Cart</span>
+										<span>Ваша корзина</span>
 										<div class="badge qty">0</div>
 									</a>
 									<div class="cart-dropdown"  >
@@ -193,7 +193,7 @@ session_start();
 										</div>
 										
 										<div class="cart-btns">
-												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i> Edit Cart</a>
+												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i> Редактировать корзину</a>
 											
 										</div>
 									</div>
