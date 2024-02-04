@@ -1,77 +1,76 @@
+<div class="main main-raised">
+	<div class="container mainn-raised" style="width:100%;">
 
-   <div class="main main-raised">
-        <div class="container mainn-raised" style="width:100%;">
-  
-  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
-    <!-- Indicators -->
-   
+		<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+		<!-- Indicators -->
 
-    <!-- Wrapper for slides -->
-    
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control _26sdfg" href="#myCarousel" data-slide="prev">
+		<!-- Wrapper for slides -->
+
+
+		<!-- Left and right controls -->
+		<!-- <a class="left carousel-control _26sdfg" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only" >Предыдущее</span>
     </a>
     <a class="right carousel-control _26sdfg" href="#myCarousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Следующее</span>
-    </a>
-  <!-- </div> -->
-</div>
-     
+    </a> -->
+		<!-- </div> -->
+	</div>
 
 
-		
-		  
-		
 
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
 
-					<!-- section title -->
-					<div class="col-md-12">
-						<div class="section-title">
-							<h3 class="title">Продукция</h3>
-							<div class="section-nav">
 
-							</div>
+
+
+	<!-- SECTION -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- section title -->
+				<div class="col-md-12">
+					<div class="section-title">
+						<h3 class="title">Продукция</h3>
+						<div class="section-nav">
+
 						</div>
 					</div>
-					<!-- /section title -->
+				</div>
+				<!-- /section title -->
 
-					<!-- Products tab & slick -->
-					<div class="col-md-12 mainn mainn-raised">
-						<div class="row">
-							<div class="products-tabs">
-								<!-- tab -->
-								<div id="tab1" class="tab-pane active">
-									<div class="products-slick" data-nav="#slick-nav-1" >
-									
+				<!-- Products tab & slick -->
+				<div class="col-md-12 mainn mainn-raised">
+					<div class="row">
+						<div class="products-tabs">
+							<!-- tab -->
+							<div id="tab1" class="tab-pane active">
+								<div class="products-slick" data-nav="#slick-nav-1">
+
 									<?php
-                    include 'db.php';
-								
-                    
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 1 AND 5";
-                $run_query = mysqli_query($con,$product_query);
-                if(mysqli_num_rows($run_query) > 0){
+									include 'db.php';
 
-                    while($row = mysqli_fetch_array($run_query)){
-                        $pro_id    = $row['product_id'];
-                        $pro_cat   = $row['product_cat'];
-                        $pro_brand = $row['product_brand'];
-                        $pro_title = $row['product_title'];
-                        $pro_price = $row['product_price'];
-                        $pro_image = $row['product_image'];
 
-                        $cat_name = $row["cat_title"];
+									$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 1 AND 5";
+									$run_query = mysqli_query($con, $product_query);
+									if (mysqli_num_rows($run_query) > 0) {
 
-                        echo "
+										while ($row = mysqli_fetch_array($run_query)) {
+											$pro_id    = $row['product_id'];
+											$pro_cat   = $row['product_cat'];
+											$pro_brand = $row['product_brand'];
+											$pro_title = $row['product_title'];
+											$pro_price = $row['product_price'];
+											$pro_image = $row['product_image'];
+
+											$cat_name = $row["cat_title"];
+
+											echo "
 				
                         
                                 
@@ -108,73 +107,71 @@
 							
                         
 			";
-		}
-        ;
-      
-}
-?>
-									</div>
-									<div id="slick-nav-1" class="products-slick-nav"></div>
+										};
+									}
+									?>
 								</div>
-								<!-- /tab -->
+								<div id="slick-nav-1" class="products-slick-nav"></div>
 							</div>
+							<!-- /tab -->
 						</div>
 					</div>
-					<!-- Products tab & slick -->
 				</div>
-				<!-- /row -->
+				<!-- Products tab & slick -->
 			</div>
-			<!-- /container -->
+			<!-- /row -->
 		</div>
-		<!-- /SECTION -->
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
 
-		
 
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
 
-					<!-- section title -->
-					<div class="col-md-12">
-						<div class="section-title">
-							<h3 class="title">Топ продаж</h3>
-							<div class="section-nav">
-								
-							</div>
+	<!-- SECTION -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- section title -->
+				<div class="col-md-12">
+					<div class="section-title">
+						<h3 class="title">Топ продаж</h3>
+						<div class="section-nav">
+
 						</div>
 					</div>
-					<!-- /section title -->
+				</div>
+				<!-- /section title -->
 
-					<!-- Products tab & slick -->
-					<div class="col-md-12 mainn mainn-raised">
-						<div class="row">
-							<div class="products-tabs">
-								<!-- tab -->
-								<div id="tab2" class="tab-pane fade in active">
-									<div class="products-slick" data-nav="#slick-nav-2">
-										<!-- product -->
-										<?php
-                    include 'db.php';
-								
-                    
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 4 AND 12";
-                $run_query = mysqli_query($con,$product_query);
-                if(mysqli_num_rows($run_query) > 0){
+				<!-- Products tab & slick -->
+				<div class="col-md-12 mainn mainn-raised">
+					<div class="row">
+						<div class="products-tabs">
+							<!-- tab -->
+							<div id="tab2" class="tab-pane fade in active">
+								<div class="products-slick" data-nav="#slick-nav-2">
+									<!-- product -->
+									<?php
+									include 'db.php';
 
-                    while($row = mysqli_fetch_array($run_query)){
-                        $pro_id    = $row['product_id'];
-                        $pro_cat   = $row['product_cat'];
-                        $pro_brand = $row['product_brand'];
-                        $pro_title = $row['product_title'];
-                        $pro_price = $row['product_price'];
-                        $pro_image = $row['product_image'];
 
-                        $cat_name = $row["cat_title"];
+									$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 4 AND 12";
+									$run_query = mysqli_query($con, $product_query);
+									if (mysqli_num_rows($run_query) > 0) {
 
-                        echo "
+										while ($row = mysqli_fetch_array($run_query)) {
+											$pro_id    = $row['product_id'];
+											$pro_cat   = $row['product_cat'];
+											$pro_brand = $row['product_brand'];
+											$pro_title = $row['product_title'];
+											$pro_price = $row['product_price'];
+											$pro_image = $row['product_image'];
+
+											$cat_name = $row["cat_title"];
+
+											echo "
 				
                         
                                 
@@ -211,26 +208,23 @@
 							
                         
 			";
-		}
-        ;
-      
-}
-?>
-										
-										<!-- /product -->
-									</div>
-									<div id="slick-nav-2" class="products-slick-nav"></div>
+										};
+									}
+									?>
+
+									<!-- /product -->
 								</div>
-								<!-- /tab -->
+								<div id="slick-nav-2" class="products-slick-nav"></div>
 							</div>
+							<!-- /tab -->
 						</div>
 					</div>
-					<!-- /Products tab & slick -->
 				</div>
-				<!-- /row -->
+				<!-- /Products tab & slick -->
 			</div>
-			<!-- /container -->
+			<!-- /row -->
 		</div>
-		<!-- /SECTION -->
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
 </div>
-		
