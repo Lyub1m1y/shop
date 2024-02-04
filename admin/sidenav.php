@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
   <link href="assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
-  <link href="assets/css/black-dashboard.css" rel="stylesheet" />
-  
+  <link href="assets/css/white-dashboard.css" rel="stylesheet" />
+
 </head>
 
 <body class="dark-edition">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="black" >
+    <div class="sidebar" data-color="orange" data-background-color="FFFFFF">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -48,9 +48,9 @@
               <i class="material-icons">list</i>
               <p>Product List</p>
             </a>
-            
+
           </li>
-          
+
           <li class="nav-item ">
             <a class="nav-link" href="orders.php">
               <i class="material-icons">library_books</i>
@@ -84,5 +84,3 @@
         </ul>
       </div>
     </div>
-    
-    
