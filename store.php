@@ -30,7 +30,7 @@ include 'header.php';
             if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
                 e.preventDefault();
             }
-            // stopping event bubbling up the DOM tree..
+            // stopping event bubbling  up the DOM tree..
             e.stopPropagation();
         };		
     };
