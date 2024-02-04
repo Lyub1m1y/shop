@@ -7,12 +7,12 @@
 					<div class="row">
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">About Us</h3>
+								<h3 class="footer-title">Наши контакты</h3>
 								
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>Shahjalal University of Science and Technology</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>Contact Us - +8801929974543</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>Drop a query</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Телеграм</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>Вконтакте</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Привет мир!</a></li>
 								</ul>
 							</div>
 						</div>
@@ -26,12 +26,7 @@
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Categories</h3>
-								<ul class="footer-links">
-									<li><a href="#">Men</a></li>
-									<li><a href="#">Women</a></li>
-									<li><a href="#">Electronics</a></li>
-								</ul>
+								
 							</div>
 						</div>
 

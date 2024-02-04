@@ -60,7 +60,7 @@ include 'header.php';
 
 						<!-- aside Widget -->
 						<div class="aside">
-							<h3 class="aside-title">Top Selling</h3>
+							<h3 class="aside-title">Топ продаж</h3>
 							<div id="get_product_home">
 								<!-- product widget -->
 								
@@ -88,7 +88,7 @@ include 'header.php';
 
 						<!-- store bottom filter -->
 						<div class="store-filter clearfix">
-							<span class="store-qty">Showing 20-100 products</span>
+							<span class="store-qty">Показать последние 20 товаров</span>
 							<ul class="store-pagination" id="pageno">
 								<li ><a class="active" href="#aside">1</a></li>
 								

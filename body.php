@@ -12,11 +12,11 @@
     <!-- Left and right controls -->
     <a class="left carousel-control _26sdfg" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only" >Previous</span>
+      <span class="sr-only" >Предыдущее</span>
     </a>
     <a class="right carousel-control _26sdfg" href="#myCarousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Следующее</span>
     </a>
   <!-- </div> -->
 </div>
@@ -37,13 +37,9 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">Products</h3>
+							<h3 class="title">Продукция</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
-									<li><a data-toggle="tab" href="#tab1">Mens</a></li>
-									<li><a data-toggle="tab" href="#tab1">Womens</a></li>
-									<li class="active"><a data-toggle="tab" href="#tab1">Electronics</a></li>
-								</ul>
+
 							</div>
 						</div>
 					</div>
@@ -144,13 +140,9 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">Top selling</h3>
+							<h3 class="title">Топ продаж</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
-									<li class="active"><a data-toggle="tab" href="#tab2">Electronics</a></li>
-									<li><a data-toggle="tab" href="#tab2">T-Shirts</a></li>
-									<li><a data-toggle="tab" href="#tab2">Pants</a></li>
-								</ul>
+								
 							</div>
 						</div>
 					</div>

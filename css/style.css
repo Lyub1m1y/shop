@@ -55,7 +55,7 @@ Table OF Contents
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  background-image: linear-gradient(-134deg, #508bad 20%,  #0e2dbb 100%);
+  background-image: linear-gradient(-134deg, #e6ae21 20%,  #E4B743 100%);
     
 }
 
@@ -488,7 +488,7 @@ textarea.input {
 #header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-image:  linear-gradient(-135deg,  #53c0ff 100%);
+  background-image:  linear-gradient(-135deg,  #e6a912 100%);
 }
 
 .header-logo {
@@ -524,7 +524,7 @@ textarea.input {
 .header-search form .search-btn {
   height: 40px;
   width: 100px;
- background: #00B4DB;  /* fallback for old browsers */
+ background: rgb(219, 69, 0);  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -1923,12 +1923,12 @@ background: linear-gradient(to bottom, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 1
 ===========================================================*/
 
 #footer {
-  background: #15161D;
-  color: #B9BABC;
+  background: #e6a912;
+  color: #064dda;
 }
 
 #bottom-footer {
-  background: #1E1F29;
+  background: #e6a912;
 }
 
 .footer {
@@ -1947,7 +1947,7 @@ background: linear-gradient(to bottom, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 1
 }
 
 .footer-links li a {
-  color: #4834DF;
+  color: #e6a912;
 }
 
 .footer-links li i {

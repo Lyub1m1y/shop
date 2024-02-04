@@ -30,7 +30,7 @@ if (isset($_POST["login_user_with_product"])) {
 								<form onsubmit="return false" id="login" class="login100-form ">
 									<div class="billing-details jumbotron">
                                     <div class="section-title">
-                                        <h2 class="login100-form-title p-b-49" >Login</h2>
+                                        <h2 class="login100-form-title p-b-49" >Вход</h2>
                                     </div>
                                    
                                     
@@ -40,20 +40,20 @@ if (isset($_POST["login_user_with_product"])) {
                                     </div>
                                     
                                     <div class="form-group">
-                                       <label for="email">Password</label>
-                                        <input class="input input-borders" type="password" name="password" placeholder="password" id="password" required>
+                                       <label for="email">Пароль</label>
+                                        <input class="input input-borders" type="password" name="password" placeholder="Пароль" id="password" required>
                                     </div>
                                     
                                     <div class="text-pad" >
                                        <a href="#">
-                                           Forgot password ?
+                                         Забыли пароль ?
                                        </a>
                                         
                                     </div>
                                     
-                                        <input class="primary-btn btn-block"   type="submit"  Value="Login">
+                                        <input class="primary-btn btn-block"   type="submit"  Value="Войти">
                                         
-                                        <div class="panel-footer"><div class="alert alert-danger"><h4 id="e_msg"></h4></div></div>
+                                       
                                     
                                     	
                                         
