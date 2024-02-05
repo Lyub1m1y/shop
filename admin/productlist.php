@@ -39,7 +39,7 @@
      <div class="col-md-14">
        <div class="card ">
          <div class="card-header card-header-primary">
-           <h4 class="card-title"> Products List</h4>
+           <h4 class="card-title"> Список товаров</h4>
 
          </div>
          <div class="card-body">
@@ -47,11 +47,11 @@
              <table class="table tablesorter " id="page1">
                <thead class=" text-primary">
                  <tr>
-                   <th>Image</th>
-                   <th>Name</th>
-                   <th>Price</th>
+                   <th>Изображение</th>
+                   <th>Название</th>
+                   <th>Цена</th>
                    <th>
-                     <a class=" btn btn-primary" href="addproduct.php">Add New</a>
+                     <a class=" btn btn-primary" href="addproduct.php">Добавить новый</a>
                    </th>
                  </tr>
                </thead>
@@ -65,7 +65,7 @@
                         <td>$price</td>
                         <td>
 
-                        <a class=' btn btn-success' href='clothes_list.php?product_id=$product_id&action=delete'>Delete</a>
+                        <a class=' btn btn-success' href='clothes_list.php?product_id=$product_id&action=delete'>Удалить</a>
                         </td></tr>";
                   }
 
