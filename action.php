@@ -330,7 +330,7 @@ if (isset($_POST["Common"])) {
 
 			echo '<div class="cart-summary">
 				    <small class="qty">' . $n . ' Item(s) selected</small>
-				    <h5>' . $total_price . '   ₽</h5>
+				    <h5>' . $total_price . '   Р</h5>
 				</div>'
 ?>
 				
@@ -353,10 +353,10 @@ if (isset($_POST["Common"])) {
 	               <table id="cart" class="table table-hover table-condensed" id="">
     				<thead>
 						<tr>
-							<th style="width:50%">Product</th>
-							<th style="width:10%">Price</th>
-							<th style="width:8%">Quantity</th>
-							<th style="width:7%" class="text-center">Subtotal</th>
+							<th style="width:50%">Товар</th>
+							<th style="width:10%">Цена</th>
+							<th style="width:8%">Количество</th>
+							<th style="width:7%" class="text-center">Итого</th>
 							<th style="width:10%"></th>
 						</tr>
 					</thead>
@@ -384,7 +384,7 @@ if (isset($_POST["Common"])) {
 									</div>
 									<div class="col-sm-6">
 										<div style="max-width=50px;">
-										<p>Product Description here.</p>
+										<p>Описание товара</p>
 										</div>
 									</div>
 									
@@ -415,7 +415,7 @@ if (isset($_POST["Common"])) {
 				<tfoot>
 					
 					<tr>
-						<td><a href="store.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+						<td><a href="store.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Продолжить покупки</a></td>
 						<td colspan="2" class="hidden-xs"></td>
 						<td class="hidden-xs text-center"><b class="net_total" ></b></td>
 						<div id="issessionset"></div>
@@ -425,7 +425,7 @@ if (isset($_POST["Common"])) {
 			if (!isset($_SESSION["uid"])) {
 				echo '
 					
-							<a href="" data-toggle="modal" data-target="#Modal_register" class="btn btn-success">Ready to Checkout</a></td>
+							<a href="" data-toggle="modal" data-target="#Modal_register" class="btn btn-success">Перейти к оплате</a></td>
 								</tr>
 							</tfoot>
 				
@@ -460,7 +460,7 @@ if (isset($_POST["Common"])) {
 									<input type="hidden" name="cancel_return" value="http://localhost/myfiles/public_html/cancel.php"/>
 									<input type="hidden" name="currency_code" value="BDT"/>
 									<input type="hidden" name="custom" value="' . $_SESSION["uid"] . '"/>
-									<input type="submit" id="submit" name="login_user_with_product" name="submit" class="btn btn-success" value="Ready to Checkout">
+									<input type="submit" id="submit" name="login_user_with_product" name="submit" class="btn btn-success" value="Перейти к оплате">
 									</form></td>
 									
 									</tr>
