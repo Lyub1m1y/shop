@@ -60,7 +60,7 @@ include "topheader.php";
                     </div>
                     <div class="col-md-4">
                       <div class="">
-                        <label for="">Добавить картинку</label>
+                        <label for="" style="color: #a9afbbd1;">Добавить картинку</label>
                         <input type="file" name="picture" required class="btn btn-fill btn-success" id="picture" >
                       </div>
                     </div>
