@@ -20,7 +20,7 @@ include "topheader.php";
     <div class="col-md-14">
       <div class="card ">
         <div class="card-header card-header-primary">
-          <h4 class="card-title"> Users List</h4>
+          <h4 class="card-title"> Список пользователей</h4>
         </div>
         <div class="card-body">
           <div class="table-responsive ps">
@@ -28,13 +28,13 @@ include "topheader.php";
               <thead class=" text-primary">
                 <tr>
                   <th>ID</th>
-                  <th>FirstName</th>
-                  <th>LastName</th>
+                  <th>Имя</th>
+                  <th>Фамилия</th>
                   <th>Email</th>
-                  <th>Password</th>
-                  <th>Contact</th>
-                  <th>Address</th>
-                  <th>City</th>
+                  <th>Пароль</th>
+                  <th>Телефон</th>
+                  <th>Адрес</th>
+                  <th>Город</th>
                 </tr>
               </thead>
               <tbody>
@@ -63,7 +63,7 @@ include "topheader.php";
       <div class="col-md-6">
         <div class="card ">
           <div class="card-header card-header-primary">
-            <h4 class="card-title"> Categories List</h4>
+            <h4 class="card-title"> Список категорий</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive ps">
@@ -71,8 +71,8 @@ include "topheader.php";
                 <thead class=" text-primary">
                   <tr>
                     <th>ID</th>
-                    <th>Categories</th>
-                    <th>Count</th>
+                    <th>Категории</th>
+                    <th>Количество товаров</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -105,7 +105,7 @@ include "topheader.php";
       <div class="col-md-6">
         <div class="card ">
           <div class="card-header card-header-primary">
-            <h4 class="card-title">Brands List</h4>
+            <h4 class="card-title">Список брендов</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive ps">
@@ -113,8 +113,8 @@ include "topheader.php";
                 <thead class=" text-primary">
                   <tr>
                     <th>ID</th>
-                    <th>Brands</th>
-                    <th>Count</th>
+                    <th>Бренды</th>
+                    <th>Количество товаров</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -128,17 +128,17 @@ include "header.php";
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-o"></i>
 								</div>
-								<a class="review-link" href="#review-form">2 Review(s) | Add your review</a>
+								<a class="review-link" href="#review-form">2 Отзыва(ов) | Добавить отзыв</a>
 							</div>
 							<div>
 								<h3 class="product-price"> ' . $row['product_price'] . '  ₽ <del class="product-old-price">990.00  ₽</del></h3>
 								<span class="product-available">В наличии</span>
 							</div>
-							<p>Product description. Here is a detailed description of the product.</p>
+							<p>Описание продукта</p>
 
 							<div class="product-options">
 								<label>
-									Size
+									Размер
 									<select class="input-select">
 										<option value="0">S</option>
 										<option value="1">M</option>
@@ -147,7 +147,7 @@ include "header.php";
 									</select>
 								</label>
 								<label>
-									Color
+									Цвет
 									<select class="input-select">
 										<option value="0">Белая</option>
 										<option value="1">Черная</option>
@@ -157,7 +157,7 @@ include "header.php";
 
 							<div class="add-to-cart">
 								<div class="btn-group" style="margin-left: 25px; margin-top: 15px">
-								<button class="add-to-cart-btn" pid="' . $row['product_id'] . '"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
+								<button class="add-to-cart-btn" pid="' . $row['product_id'] . '"  id="product" ><i class="fa fa-shopping-cart"></i>Добавить в корзину</button>
                                 </div>
 								
 								
@@ -184,9 +184,9 @@ include "header.php";
 						<div id="product-tab">
 							<!-- product tab nav -->
 							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
-								<li><a data-toggle="tab" href="#tab2">Details</a></li>
-								<li><a data-toggle="tab" href="#tab3">Reviews (2)</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab1">Описание</a></li>
+								<li><a data-toggle="tab" href="#tab2">Характеристики</a></li>
+								<li><a data-toggle="tab" href="#tab3">Отзывы (2)</a></li>
 							</ul>
 							<!-- /product tab nav -->
 
@@ -196,7 +196,7 @@ include "header.php";
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Description of the product. Here is a detailed description of the product. Detailed featues etc. etc.</p>
+											<p>Описание продукта</p>
 										</div>
 									</div>
 								</div>
@@ -206,7 +206,7 @@ include "header.php";
 								<div id="tab2" class="tab-pane fade in">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Description of the product. Here is a detailed description of the product. Detailed featues etc. etc.</p>
+											<p>Характеристики изделия</p>
 										</div>
 									</div>
 								</div>
@@ -316,7 +316,7 @@ include "header.php";
 															</div>
 														</div>
 														<div class="review-body">
-															<p>Another Review of the product. </p>
+															<p>Отзыв о продукте </p>
 														</div>
 													</li>
 													<li>
@@ -332,7 +332,7 @@ include "header.php";
 															</div>
 														</div>
 														<div class="review-body">
-															<p>Detailed Review of the Product</p>
+															<p>Второй отзыв о продукте</p>
 														</div>
 													</li>
 												</ul>
@@ -351,17 +351,17 @@ include "header.php";
 										<div class="col-md-3 mainn">
 											<div id="review-form">
 												<form class="review-form">
-													<input class="input" type="text" placeholder="Your Name">
-													<input class="input" type="email" placeholder="Your Email">
-													<textarea class="input" placeholder="Your Review"></textarea>
+													<input class="input" type="text" placeholder="Ваше имя">
+													<input class="input" type="email" placeholder="Ваш Email">
+													<textarea class="input" placeholder="Ваш отзыв"></textarea>
 													<div class="input-rating">
-														<span>Your Rating: </span>
+														<span>Ваша оценка: </span>
 														<div class="stars">
 															<input id="star5" name="rating" value="5" type="radio"><label for="star5"></label>
 															<input id="star4" name="rating" value="4" type="radio"><label for="star4"></label>
 														</div>
 													</div>
-													<button class="primary-btn">Submit</button>
+													<button class="primary-btn">Отправить</button>
 												</form>
 											</div>
 										</div>
@@ -390,7 +390,7 @@ include "header.php";
                     
 					<div class="col-md-12">
 						<div class="section-title text-center">
-							<h3 class="title">Related Products</h3>
+							<h3 class="title">Похожие товары</h3>
 							
 						</div>
 					</div>

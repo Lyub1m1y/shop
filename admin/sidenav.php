@@ -34,19 +34,19 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.php">
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p>Главная</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="adduser.php">
               <i class="material-icons">person</i>
-              <p>Add User</p>
+              <p>Добавить пользователя</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="productlist.php">
               <i class="material-icons">list</i>
-              <p>Product List</p>
+              <p>Список товаров</p>
             </a>
 
           </li>
@@ -54,25 +54,25 @@
           <li class="nav-item ">
             <a class="nav-link" href="orders.php">
               <i class="material-icons">library_books</i>
-              <p>Orders</p>
+              <p>Заказы</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="addproduct.php">
               <i class="material-icons">add</i>
-              <p>Add Products</p>
+              <p>Добавить товар</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="manageuser.php">
               <i class="material-icons">edit_user</i>
-              <p>Manage User</p>
+              <p>Управление пользователями</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="index.php">
               <i class="material-icons">logout</i>
-              <p>Logout</p>
+              <p>Выйти</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">

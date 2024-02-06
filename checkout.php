@@ -228,9 +228,9 @@ span.price {
 					<table class='table table-condensed'>
 					<thead><tr>
 					<th >no</th>
-					<th >product title</th>
-					<th >	qty	</th>
-					<th >	amount</th></tr>
+					<th >Товар</th>
+					<th >	Количество	</th>
+					<th >	Стоимость</th></tr>
 					</thead>
 					<tbody>
 					";
