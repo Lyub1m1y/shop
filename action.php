@@ -330,7 +330,7 @@ if (isset($_POST["Common"])) {
 
 			echo '<div class="cart-summary">
 				    <small class="qty">' . $n . ' Item(s) selected</small>
-				    <h5>' . $total_price . '   Р</h5>
+				    <h5>' . $total_price . '   ₽</h5>
 				</div>'
 ?>
 				
