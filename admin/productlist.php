@@ -58,15 +58,15 @@
                <tbody>
                  <?php
 
-                  $result = mysqli_query($con, "select product_id,product_image, product_title,product_price from products  where  product_cat=2 or product_cat=3 or product_cat=4 Limit $page1,18") or die("query 1 incorrect.....");
+                  $result = mysqli_query($con, "select product_id,product_image, product_title,product_price from products Limit $page1,10") or die("query 1 incorrect.....");
 
                   while (list($product_id, $image, $product_name, $price) = mysqli_fetch_array($result)) {
                     echo "<tr><td><img src='../product_images/$image' style='width:50px; height:50px; border:groove #000'></td><td>$product_name</td>
-                        <td>$price</td>
-                        <td>
+                      <td>$price</td>
+                      <td>
 
-                        <a class=' btn btn-success' href='clothes_list.php?product_id=$product_id&action=delete'>Удалить</a>
-                        </td></tr>";
+                      <a class=' btn btn-success' href='productlist.php?product_id=$product_id&action=delete'>Delete</a>
+                      </td></tr>";
                   }
 
                   ?>
@@ -82,7 +82,7 @@
          </div>
        </div>
        <nav aria-label="Page navigation example">
-         <ul class="pagination">
+         <ul class="pagination" style="color: #a9afbbd1;">
            <li class="page-item">
              <a class="page-link" href="#" aria-label="Previous">
                <span aria-hidden="true">&laquo;</span>

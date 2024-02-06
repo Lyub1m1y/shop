@@ -4309,6 +4309,9 @@ tbody.collapse.show {
   color: #495057;
   background-color: #fafafa;
   border-color: #dee2e6 #dee2e6 #fafafa;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .nav-tabs .dropdown-menu {
@@ -5089,7 +5092,7 @@ tbody.collapse.show {
 .page-link:hover {
   color: #0a6ebd;
   text-decoration: none;
-  background-color: #e9ecef;
+  background-color: #e9efed;
   border-color: #dee2e6;
 }
 
@@ -15535,7 +15538,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .main-panel>.content {
   margin-top: 70px;
-  padding: 30px 15px;
+  padding: 230px 15px;
   min-height: calc(100vh - 123px);
 }
 
@@ -21990,7 +21993,7 @@ fieldset[disabled][disabled] .dark-edition .has-error .form-control,
 }
 
 .dark-edition a {
-  color: #fff;
+  color: #8b92a9;
 }
 
 .dark-edition.offline-doc .brand .description {
