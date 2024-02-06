@@ -120,23 +120,23 @@ span.price {
 					<div class="row-checkout">
 					
 					<div class="col-50">
-						<h3>Billing Address</h3>
-						<label for="fname"><i class="fa fa-user" ></i> Full Name</label>
+						<h3>Реквизиты покупателя</h3>
+						<label for="fname"><i class="fa fa-user" ></i> Полное имя</label>
 						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="'.$row["first_name"].' '.$row["last_name"].'">
 						<label for="email"><i class="fa fa-envelope"></i> Email</label>
 						<input type="text" id="email" name="email" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$" value="'.$row["email"].'" required>
-						<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+						<label for="adr"><i class="fa fa-address-card-o"></i> Адрес</label>
 						<input type="text" id="adr" name="address" class="form-control" value="'.$row["address1"].'" required>
-						<label for="city"><i class="fa fa-institution"></i> City</label>
+						<label for="city"><i class="fa fa-institution"></i> Город</label>
 						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'" pattern="^[a-zA-Z ]+$" required>
 
 						<div class="row">
 						<div class="col-50">
-							<label for="state">State</label>
+							<label for="state">Область</label>
 							<input type="text" id="state" name="state" class="form-control" pattern="^[a-zA-Z ]+$" required>
 						</div>
 						<div class="col-50">
-							<label for="zip">Zip</label>
+							<label for="zip">Индекс</label>
 							<input type="text" id="zip" name="zip" class="form-control" pattern="^[0-9]{6}(?:-[0-9]{4})?$" required>
 						</div>
 						</div>
@@ -144,18 +144,18 @@ span.price {
 					
 					
 					<div class="col-50">
-						<h3>Payment</h3>
+						<h3>Оплата</h3>
 						
 						
 						
-						<label for="cname">Name on Card</label>
+						<label for="cname">Имя на карте</label>
 						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
 						
 						<div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Card Number</label>
+                        <label for="cardNumber">Номер карты</label>
                         <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
                     </div>
-						<label for="expdate">Exp Date</label>
+						<label for="expdate">ММ/ГГ</label>
 						<input type="text" id="expdate" name="expdate" class="form-control" pattern="^((0[1-9])|(1[0-2]))\/(\d{2})$" placeholder="12/22"required>
 						
 
@@ -170,7 +170,7 @@ span.price {
 					</div>
 					</div>
 					</div>
-					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Shipping address same as billing
+					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Адрес доставки такой же как и адрес счёта
 					</label>';
 					$i=1;
 					$total=0;
@@ -196,7 +196,7 @@ span.price {
 				<input type="hidden" name="total_count" value="'.$total_count.'">
 					<input type="hidden" name="total_price" value="'.$total.'">
 					
-					<input type="submit" id="submit" value="Continue to checkout" class="checkout-btn">
+					<input type="submit" id="submit" value="Оплатить" class="checkout-btn">
 				</form>
 				</div>
 			</div>
@@ -227,7 +227,7 @@ span.price {
 
 					<table class='table table-condensed'>
 					<thead><tr>
-					<th >no</th>
+					<th >Номер</th>
 					<th >Товар</th>
 					<th >	Количество	</th>
 					<th >	Стоимость</th></tr>
@@ -262,7 +262,7 @@ span.price {
 				</table>
 				<hr>
 				
-				<h3>total<span class='price' style='color:black'><b>$$total</b></span></h3>";
+				<h3>Итого<span class='price' style='color:black'><b>₽$total</b></span></h3>";
 					
 				}
 				?>
@@ -271,39 +271,7 @@ span.price {
 		</div>
 	</div>
 </section>
-		<div id="newsletter" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="newsletter">
-							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
-							<form >
-								<input class="input" type="email" placeholder="Enter Your Email">
-								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-							</form>
-							<ul class="newsletter-follow">
-								<li>
-									<a href="#"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-instagram"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
+		
 		
 <?php
 include "footer.php";
