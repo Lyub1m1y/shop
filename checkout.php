@@ -218,7 +218,7 @@ span.price {
 					$i=1;
 					echo
 					"
-					<h4>Cart 
+					<h4>Корзина 
 					<span class='price' style='color:black'>
 					<i class='fa fa-shopping-cart'></i> 
 					<b>$total_count</b>
