@@ -57,10 +57,10 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
-(1, 'HP'),
-(2, 'Samsung'),
-(3, 'Apple'),
-(4, 'LG');
+(1, 'Zhigulevskoye'),
+(2, 'Baltika'),
+(3, 'Ohota'),
+(4, 'Germanskoye');
 
 -- --------------------------------------------------------
 
@@ -115,9 +115,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
-(1, 'Electronics'),
-(2, 'Women'),
-(3, 'Men');
+(1, 'costume'),
+(2, 'socks'),
+(3, 'card_holder'),
+(4, 'case');
 
 -- --------------------------------------------------------
 
@@ -170,8 +171,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_status`) VALUES
-(1, 12, 7, 1, '07M47684BS5725041', 'Completed'),
-(2, 14, 2, 1, '07M47684BS5725041', 'Completed');
+(1, 1, 3, 1, '07M47684BS5725041', 'Completed'),
+(2, 2, 4, 1, '07M47684BS5725041', 'Completed');
 
 -- --------------------------------------------------------
 
@@ -201,7 +202,7 @@ CREATE TABLE `orders_info` (
 --
 
 INSERT INTO `orders_info` (`order_id`, `user_id`, `f_name`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expdate`, `prod_count`, `total_amt`, `cvv`) VALUES
-(1, 12, 'Seemanta', 'babune99@gmail.com', 'Sadarghat, Chittagong', 'Bangalore', 'Bangladesh', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
+(1, 1, 'Seemanta', 'babune99@gmail.com', 'Sadarghat, Chittagong', 'Bangalore', 'Bangladesh', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
 
 -- --------------------------------------------------------
 
@@ -248,21 +249,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
-(1, 1, 1, 'HP Pavilion 14-dv0511sa 14" Laptop - Intel® Core™ i3, 256 GB SSD, Silver', 68990, 'Take on daily tasks, Stay powered up, Microsoft Office & internet security', 'product01.png', 'hp laptop electronics'),
-(2, 1, 3, 'Apple iPhone 12 Pro', 159900, 'Equipped with impressive features and decent specifications, the Apple iPhone 12 Pro is a perfect choice', 'iphone12.png', 'mobile iphone apple'),
-(3, 1, 2, 'Samsung Galaxy A60', 100000, 'Samsung Galaxy A60 has spiced up the game by providing triple and quad-camera setup.', 'samsunga.jpg', 'samsung galxaxy a60'),
-(4, 1, 3, 'iPhone 11', 82000, 'Apple iPhone', 'iphone11.png', 'iphone apple mobile'),
-(5, 1, 1, 'Samsung Notebook 9', 235000, 'Samsung new combination Laptop Notebook 9 Series', 'samsung_latop.jpg', 'samsung laptop'),
-(6, 1, 1, 'Laptop Pavillion', 50000, 'Laptop Hp Pavillion', 'laptop_PNG5930.png', 'Laptop Hp Pavillion'),
-(7, 3, 6, 'Sweater For Men', 1600, 'Comfy Sweater', 'sweater.png', 'sweater gents men'),
-(8, 3, 6, 'T shirt', 800, 'ssds', 'tshirt.jpg', 'formal t shirt black'),
-(9, 4, 6, 'T shirt For Kids', 1300, 'yellow t shirt', 'kidshirt.jpeg', 'kids yellow t shirt'),
-(10, 4, 6, 'Dress For Women', 2900, 'dress', 'womendress.jpeg', 'women blue dress'),
-(11, 1, 1, 'Samsung Headphones', 25000, 'Headphones', 'samsunghead.jpeg', 'Headphones Samsung'),
-(12, 3, 6, 'boys Shirts', 350, 'shirts', 'pm1.JPG', 'suit boys shirts'),
-(13, 3, 6, 'boys Shirts', 270, 'shirts', 'pm2.JPG', 'suit boys shirts'),
-(14, 3, 6, 'boys Shirts', 453, 'shirts', 'pm3.JPG', 'suit boys shirts'),
-(15, 3, 6, 'boys Shirts', 220, 'shirts', 'ms1.JPG', 'suit boys shirts');
+(1, 3, 1, 'Cart Holder 1', 599, 'lorem...', 'cardholder1.png', 'Cart Holder beer'),
+(2, 4, 3, 'Case 1', 799, 'lorem...', 'case1.png', 'Case beer'),
+(3, 1, 2, 'Beer costume 1', 4799, 'lorem...', 'costume1.png', 'Beer costume'),
+(4, 1, 3, 'Beer costume 2', 8999, 'lorem...', 'costume2.png', 'Beer costume'),
+(5, 1, 1, 'Beer costume 3', 3299, 'lorem...', 'costume3.png', 'Beer costume'),
+(6, 1, 1, 'Beer costume 4', 9999, 'lorem...', 'costume4.png', 'Beer costume'),
+(7, 2, 4, 'Socks beer 1', 1599, 'lorem...', 'socks1.png', 'Socks beer'),
+(8, 2, 4, 'Socks beer 2', 1999, 'lorem...', 'socks2.png', 'Socks beer');
 
 -- --------------------------------------------------------
 
@@ -286,7 +280,8 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(12, 'Seemanta', 'Bhattacharjee', 'babune99@gmail.com', '12345678', '01971988523', 'Chittagong', 'Sylhet');
+(1, 'Sem', 'Babunov', 'babunov.sem@gmail.com', 'password', '01971988523', 'Chittagong', 'Sylhet'),
+(2, 'User', 'Userov', 'user@gmail.com', 'password', '89997773322', 'Samara', 'da');
 
 --
 -- Triggers `user_info`
