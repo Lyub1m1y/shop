@@ -254,9 +254,29 @@ INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_t
 (3, 1, 2, 'Beer costume 1', 4799, 'lorem...', 'costume1.png', 'Beer costume'),
 (4, 1, 3, 'Beer costume 2', 8999, 'lorem...', 'costume2.png', 'Beer costume'),
 (5, 1, 1, 'Beer costume 3', 3299, 'lorem...', 'costume3.png', 'Beer costume'),
-(6, 1, 1, 'Beer costume 4', 9999, 'lorem...', 'costume4.png', 'Beer costume'),
+(6, 1, 1, 'Beer costume 4', 9190, 'lorem...', 'costume4.png', 'Beer costume'),
 (7, 2, 4, 'Socks beer 1', 1599, 'lorem...', 'socks1.png', 'Socks beer'),
 (8, 2, 4, 'Socks beer 2', 1999, 'lorem...', 'socks2.png', 'Socks beer');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `permission`
+--
+
+CREATE TABLE `permission` (
+  `id` int(10) NOT NULL,
+  `role` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `permission`
+--
+
+INSERT INTO `permission` (`id`, `role`) VALUES
+(0, 'Simple User'),
+(1, 'Manager'),
+(2, 'Admin');
 
 -- --------------------------------------------------------
 
@@ -268,6 +288,7 @@ CREATE TABLE `user_info` (
   `user_id` int(10) NOT NULL,
   `first_name` varchar(100) NOT NULL,
   `last_name` varchar(100) NOT NULL,
+  `permission_id` int(10) NOT NULL,
   `email` varchar(300) NOT NULL,
   `password` varchar(300) NOT NULL,
   `mobile` varchar(10) NOT NULL,
@@ -279,9 +300,10 @@ CREATE TABLE `user_info` (
 -- Dumping data for table `user_info`
 --
 
-INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(1, 'Sem', 'Babunov', 'babunov.sem@gmail.com', 'password', '01971988523', 'Chittagong', 'Sylhet'),
-(2, 'User', 'Userov', 'user@gmail.com', 'password', '89997773322', 'Samara', 'da');
+INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, permission_id, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
+(1, 'Manager', 'Managerov', 1, 'manager@gmail.com', 'password', '01971988523', 'Chittagong', 'Sylhet'),
+(2, 'User', 'Userov', 0, 'user@gmail.com', 'password', '89997773322', 'Samara', 'da'),
+(3, 'Admin', 'Adminov', 2, 'admin@gmail.com', 'password', '89999993322', 'Samara', 'da');
 
 --
 -- Triggers `user_info`

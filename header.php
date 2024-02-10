@@ -144,14 +144,28 @@ session_start();
                 $row = mysqli_fetch_array($query);
 
                 echo '
-                               <div class="dropdownn">
-                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> Привет ' . $row["first_name"] . '</a>
-                                  <div class="dropdownn-content">
-                                    <a href="" data-toggle="modal" data-target="#profile"><i class="fa fa-user-circle" aria-hidden="true" ></i>Мой профиль</a>
-                                    <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Выйти</a>
-                                    
-                                  </div>
-                                </div>';
+                       <div class="dropdownn">
+                          <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> Привет ' . $row["first_name"] . '</a>
+                          <div class="dropdownn-content">
+                      ';
+                      if(isset($_SESSION['uid'])) {
+                          $user_info_query = mysqli_query($con, "SELECT permission_id FROM user_info WHERE user_id='" . $_SESSION['uid'] . "'");
+
+                          if ($user_info_query) {
+                              $data = mysqli_fetch_assoc($user_info_query);
+                              if ($data['permission_id'] >= 1) {
+
+                                echo '
+                            
+                                        <a href="admin/index.php" ><i class="fa fa-user-circle" aria-hidden="true" ></i>Админ панель</a>
+                                        <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Выйти</a>
+                                      </div>
+                                    </div>';
+                              } else {
+                                echo '     <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Выйти</a>';
+                              }
+                          }
+                      }
               } else {
                 echo '
                                 <div class="dropdownn">
