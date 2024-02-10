@@ -254,7 +254,7 @@ INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_t
 (3, 1, 2, 'Beer costume 1', 4799, 'lorem...', 'costume1.png', 'Beer costume'),
 (4, 1, 3, 'Beer costume 2', 8999, 'lorem...', 'costume2.png', 'Beer costume'),
 (5, 1, 1, 'Beer costume 3', 3299, 'lorem...', 'costume3.png', 'Beer costume'),
-(6, 1, 1, 'Beer costume 4', 9999, 'lorem...', 'costume4.png', 'Beer costume'),
+(6, 1, 1, 'Beer costume 4', 9190, 'lorem...', 'costume4.png', 'Beer costume'),
 (7, 2, 4, 'Socks beer 1', 1599, 'lorem...', 'socks1.png', 'Socks beer'),
 (8, 2, 4, 'Socks beer 2', 1999, 'lorem...', 'socks2.png', 'Socks beer');
 
